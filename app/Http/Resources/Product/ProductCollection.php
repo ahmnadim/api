@@ -12,6 +12,9 @@ class ProductCollection extends Resource
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
+
+    public $preserveKeys = true;
+    
     public function toArray($request)
     {
         return [
